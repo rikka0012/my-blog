@@ -14,23 +14,23 @@ export type DeviceCategory = Record<string, Device[]> & {
 };
 
 export const devicesData: DeviceCategory = {
-	OnePlus: [
+	XiaoMi: [
 		{
-			name: "OnePlus 13T",
-			image: "/images/device/oneplus13t.webp",
-			specs: "Gray / 16G + 1TB",
-			description: "Flagship performance, Hasselblad imaging, 80W SuperVOOC.",
-			link: "https://www.oneplus.com/cn/13t",
+			name: "RedMi K80",
+			image: "/images/device/Redmi.webp",
+			specs: "汐月蓝 / 256 + 12",
+			description: "日用手机，已解",
+			link: "https://www.mi.com/prod/redmi-k80",
 		},
 	],
-	Router: [
+	ASUS: [
 		{
-			name: "GL-MT3000",
-			image: "/images/device/mt3000.webp",
-			specs: "1000Mbps / 2.5G",
+			name: "ASUS TX Gaming FX608JMR",
+			image: "/images/device/asus.webp",
+			specs: "NVIDIA® GeForce RTX™ 5060 Laptop GPU,8GB\n英特尔® 酷睿™ i7-14650HX 处理器",
 			description:
-				"Portable WiFi 6 router suitable for business trips and home use.",
-			link: "https://www.gl-inet.cn/products/gl-mt3000/",
+				"个人用游戏本",
+			link: "https://www.asus.com.cn/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f16-2025/techspec/",
 		},
 	],
 };
