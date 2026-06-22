@@ -3,7 +3,7 @@ import type { Translation } from "../translation";
 
 export const zh_CN: Translation = {
 	[Key.home]: "主页",
-	[Key.about]: "关于我们",
+	[Key.about]: "关于",
 	[Key.archive]: "归档",
 	[Key.search]: "搜索",
 	[Key.other]: "其他",
@@ -27,7 +27,7 @@ export const zh_CN: Translation = {
 
 	[Key.comments]: "评论",
 	[Key.friends]: "友链",
-	[Key.friendsSubtitle]: "发现更多优质网站",
+	[Key.friendsSubtitle]: "发现更多优质内容",
 	[Key.friendsSearchPlaceholder]: "搜索友链名称或描述...",
 	[Key.friendsFilterAll]: "全部",
 	[Key.friendsNoResults]: "未找到匹配的友链",
@@ -92,8 +92,8 @@ export const zh_CN: Translation = {
 
 	// 404页面
 	[Key.notFound]: "404",
-	[Key.notFoundTitle]: "页面未找到",
-	[Key.notFoundDescription]: "抱歉，您访问的页面不存在或已被移动。",
+	[Key.notFoundTitle]: "页面已失踪",
+	[Key.notFoundDescription]: "抱歉，您访问的页面正在休假中",
 	[Key.backToHome]: "返回首页",
 
 	// 音乐播放器
@@ -122,9 +122,9 @@ export const zh_CN: Translation = {
 
 	// 相册页面
 	[Key.albums]: "相册",
-	[Key.albumsSubtitle]: "记录生活中的美好瞬间",
+	[Key.albumsSubtitle]: "收集的各种图片",
 	[Key.albumsEmpty]: "暂无内容",
-	[Key.albumsEmptyDesc]: "还没有创建任何相册，快去添加一些美好的回忆吧！",
+	[Key.albumsEmptyDesc]: "还没有创建任何相册，呦",
 	[Key.albumsBackToList]: "返回相册",
 	[Key.albumsPhotoCount]: "张照片",
 	[Key.albumsPhotosCount]: "张照片",

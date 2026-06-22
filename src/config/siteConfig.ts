@@ -21,9 +21,9 @@ export const siteConfig: SiteConfig = {
 		anime: false, // 番剧页面开关
 		diary: true, // 日记页面开关
 		friends: true, // 友链页面开关
-		projects: true, // 项目页面开关
-		skills: true, // 技能页面开关
-		timeline: true, // 时间线页面开关
+		projects: false, // 项目页面开关
+		skills: false, // 技能页面开关
+		timeline: false, // 时间线页面开关
 		albums: true, // 相册页面开关
 		devices: false, // 设备页面开关
 	},
@@ -151,9 +151,9 @@ export const siteConfig: SiteConfig = {
 			switchable: true,
 
 			subtitle: [
-				"サイケな恋人 また会いましょう さようなら",
-				"光の中にいつも君がいるみたいで，僕は目をそらせない",
-				"平行線の延長線が，屈折した，習慣と化し消せない，日々を物語る",
+				"サイケな恋人, また会いましょう, さようなら",
+				"光の中にいつも君がいるみたいで, 僕は目をそらせない",
+				"平行線の延長線が, 屈折した, 習慣と化し消せない, 日々を物語る",
 				"安心して, 僕は帰らない, ほらね",
 				"明日はどんな星が見れるだろうか",
 			],
@@ -192,7 +192,7 @@ export const siteConfig: SiteConfig = {
 		{
 		   src: '/favicon/favicon.ico',    // 图标文件路径
 		   theme: 'light',              // 可选，指定主题 'light' | 'dark'
-		   sizes: '32x32',              // 可选，图标大小
+		   sizes: '64x64',              // 可选，图标大小
 		}
 	],
 
