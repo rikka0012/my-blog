@@ -125,7 +125,7 @@ export const siteConfig: SiteConfig = {
 
 		carousel: {
 			enable: true,
-			interval: 3,
+			interval: 7,
 			switchable: true,
 		},
 
@@ -147,7 +147,7 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true,
-			title: "不可视境界线",
+			title: "不可视境界线[建设中]",
 			switchable: true,
 
 			subtitle: [
