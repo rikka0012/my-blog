@@ -147,6 +147,29 @@ const subtitle = i18n(I18nKey.diarySubtitle);
 		</div>
 	</div>
 
+	<!-- 客户端动态计算相对时间，解决静态构建时间冻结问题 -->
+	<script is:inline>
+		(function () {
+			function update() {
+				var c = document.getElementById("diary-list");
+				if (!c) return;
+				var mAgo = c.dataset.minutesAgo || "minutes ago";
+				var hAgo = c.dataset.hoursAgo || "hours ago";
+				var dAgo = c.dataset.daysAgo || "days ago";
+				document.querySelectorAll(".moment-card time[datetime]").forEach(function (el) {
+					var dt = el.getAttribute("datetime");
+					if (!dt) return;
+					var m = Math.max(0, Math.floor((Date.now() - new Date(dt).getTime()) / 60000));
+					el.textContent = m < 60 ? m + mAgo : m < 1440 ? Math.floor(m / 60) + hAgo : Math.floor(m / 1440) + dAgo;
+				});
+			}
+			update();
+			setInterval(update, 60000);
+			document.addEventListener("swup:contentReplaced", update);
+			if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", update);
+		})();
+	</script>
+
 	{
 		diaryApiUrl && (
 			<script is:inline>
