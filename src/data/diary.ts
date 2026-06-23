@@ -17,8 +17,15 @@ const diaryData: DiaryItem[] = [
 		id: 1,
 		content:
 			"全力建设博客中o_O",
-		date: "2026-06-22T21:46:00+08:00",
+		date: "2026-06-22T13:46:02.000Z",
 		images: ["/images/diary/sakura.jpg", "/images/diary/1.webp"],
+	},
+	{
+		id: 2,
+		content:
+			"备考期末了,建设暂停zzz",
+		date: "2026-06-23T09:01:34.000Z",
+		//images: ["/images/diary/sakura.jpg", "/images/diary/1.webp"],
 	},
 ];
 
